@@ -1,0 +1,6 @@
+1. 400 = Bad Request (User made fault)
+2. 404 = Not found
+3. 200 = Found
+4. 201 = Successfully created
+5. 401 = Unauthorized [authorization required]
+6. 500 = Internal Server Error (not user fault but Server made fault)

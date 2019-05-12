@@ -1,0 +1,38 @@
+	1. pip install --upgrade virtualenv
+Create Virtual Environment folder in the directory:
+===================================================
+	[Create this virtual folder in the same directory of templates and static]
+	2. python -m venv virtual   // here virtual = (folderName) [Windows]
+
+	   python -m virtualenv virtual   // here virtual = (folderName) [Mac/Linux]
+Activate Virtual Environment:
+============================
+	3. virtual\Scripts\activate [for Activate the activate.bat file]
+Install flask in this directory:
+================================
+	4. virtual\Scripts\pip install --upgrade flask
+
+for flask SQLAlchemy:
+=====================
+	5. virtual\Scripts\pip install --upgrade Flask-SQLAlchemy, SQLAlchemy
+	==>pip install SQLAlchemy
+
+for flask Migrate:
+==================
+	6. pip install Flask-Migrate
+
+for PostGRESql:
+===============
+	7. pip install psycopg2
+
+Flask RESTfull:
+===============
+	8. virtual\Scripts\pip install --upgrade Flask-RESTful OR pip Install --upgrade flask-restful , aniso8601-6.0.0, pytz-2019.1, six-1.12.0
+
+Flask-JWT: ## JWT = Json Web Token
+==========
+	9. virtual\Scripts\pip install --upgrade Flask-JWT, PyJWT
+
+cx_Oracle:
+==========
+	10. virtual\Scripts\pip install --upgrade cx_Oracle
