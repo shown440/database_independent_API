@@ -10,6 +10,7 @@ from resources.store import Store, StoreList
 app = Flask(__name__)
 # mysql://username:password@server/db
 app.config["SQLALCHEMY_DATABASE_URI"] = 'oracle+cx_oracle://shifullah:shifullah@10.11.201.251:1521/stlbas'
+#app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:postgres1234@127.0.0.1:5432/db_independent_api'
 #app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # its turn off the flask-sqlalchemy modification tracker but don't turn off SQLAlchemy modification tracker
