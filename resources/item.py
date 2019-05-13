@@ -38,7 +38,7 @@ class Item(Resource):
         sql = db.text('SELECT (NVL(MAX(ID),0)+1) FROM ITEMS6')
         item_id = db.engine.execute(sql).fetchone()
 
-        item = ItemModel(item_id[0], name, data["price"], data["store_id"]) #ItemModel(name, data["price"]) <- {"name":name, "price":data["price"]}
+        item = ItemModel(item_id[0], name, data["price"], data["store_id"]) #item_id[0] *** #ItemModel(name, data["price"]) <- {"name":name, "price":data["price"]}
         #because this is not a dictionary. Its a ItemModel object now.
 
         try:
