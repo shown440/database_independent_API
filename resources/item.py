@@ -40,7 +40,7 @@ class Item(Resource):
 
         data = Item.parser.parse_args()
         #print("####################", data)
-        sql = db.text('SELECT (NVL(MAX(ID),0)+1) FROM users6')
+        sql = db.text('SELECT (NVL(MAX(ID),0)+1) FROM ITEMS6')
         item_id = db.engine.execute(sql).fetchone()
 
         item = ItemModel(item_id[0], name, data["price"], data["store_id"]) #ItemModel(name, data["price"]) <- {"name":name, "price":data["price"]}

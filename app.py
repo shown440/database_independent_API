@@ -36,4 +36,4 @@ if __name__ == '__main__':
     from db import db
     db.init_app(app)
     app.debug=True
-    app.run()
+    app.run(host="10.11.200.39")
