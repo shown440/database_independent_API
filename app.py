@@ -8,7 +8,6 @@ from resources.item import Item, ItemList
 from resources.store import Store, StoreList
 
 app = Flask(__name__)
-#ORACLE_URI = "shifullah/shifullah@10.11.201.251:1521/stlbas" ---oracle+cx_oracle
 # mysql://username:password@server/db
 app.config["SQLALCHEMY_DATABASE_URI"] = 'oracle+cx_oracle://shifullah:shifullah@10.11.201.251:1521/stlbas'
 #app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///data.db'
